@@ -23,7 +23,12 @@
         <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
       {% endfor %}
     </ul></nav>
-
+    
+    <div class="cover" style="background-color: {{ site.white }}">
+      <h1 class="cover-caption">Hello, Jobi.</h1>
+      <h2 class="cover-caption sub">Please make my job search quick and easy.</h2>
+      <img src= {{ site.cover_img }} alt="Cover Photo"/>
+    </div>
 
     {% for page in site.posts reversed %}
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
@@ -37,7 +42,7 @@
         <div class="subtlecircle sectiondivider faicon">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
+            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x" style="color:{{ site.colors.turquoise }}"></i>
           </span>
           <!-- <h5 class="icon-title">{{ page.title }}</h5> -->
         </div>
