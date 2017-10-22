@@ -27,8 +27,8 @@
     </ul></nav>
     
     <div class="cover" style="background-color: {{ site.white }}">
-      <h1 class="cover-caption">Hello, Jobi.</h1>
-      <h2 class="cover-caption sub">Please make my job search quick and easy.</h2>
+      <h1 class="cover-caption">Hello Jobi</h1>
+      <h2 class="cover-caption sub">Please make my job search quick and easy</h2>
       <img src= {{ site.cover_img }} alt="Cover Photo"/>
     </div>
 
@@ -51,6 +51,7 @@
         {% endif %}
         <div class="container {{ page.style }}">
           {{ page.content }}
+          {% if page.form %}{% include form.html %}{% endif %}
         </div>
       </div>
     {% endfor %}
@@ -68,4 +69,5 @@
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="site.js"></script>
+<script data-cfasync="false" type="text/javascript" src="/form-submission-handler.js"></script>
 </html>

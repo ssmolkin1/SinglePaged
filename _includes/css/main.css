@@ -289,7 +289,6 @@ nav ul li:hover, nav ul li.active {
   text-shadow: 1px 1px 3px #333;
 }
 
-
 .columned {
   -webkit-column-count: 3;
   -moz-column-count:    3;
@@ -307,52 +306,56 @@ nav ul li:hover, nav ul li.active {
 .longlist li { margin-bottom: 3px; }
 
 
+/* ----- form ----- */
 
-/* ----- fork on github banner ----- */
-#forkongithub a {
-  color:#fff;
-  text-decoration:none;
-  font-family:arial,sans-serif;
-  text-align:center;
-  font-weight:700;
-  font-size:1rem;
-  line-height:2rem;
-  position:relative;
-  transition:.5s;
-  padding:5px 40px;
+aside {
+    background: #1f8dd6;
+    padding-top: 1em;
+    padding-bottom: .01em; 
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
 }
-#forkongithub a::before, #forkongithub a::after {
-  content:""; width:100%; display:block; position:absolute;
-  top:1px; left:0; height:1px; background:#fff;
-}
-#forkongithub a::after { bottom:1px; top:auto; }
-@media screen and (min-width:800px) {
-  #forkongithub {
-    position:fixed;
-    display:block;
-    top:0;
-    right:0;
-    width:200px;
-    overflow:hidden;
-    height:200px;
-    z-index:9999;
-  }
-  #forkongithub a {
-    width:200px;
-    position:absolute;
-    top:60px;
-    right:-60px;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    box-shadow:4px 4px 10px rgba(0,0,0,0.8);
-    box-sizing: content-box;
-  }
+
+form label, form input, form textarea{
+  font-size: 17px;
 }
 
 
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+
+.form-error{
+  display: none;
+  color: red;
+}
+
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
+}
+.button-xlarge {
+  font-size: 125%;
+}
+button {
+  float: right;
+}
+#name, #email, #password, #password-match {
+  width: 50%;
+  font-size: 17px;
+}
 
 /* mid size (tablets, landscapes) */
 @media only screen and (max-width: 679px) {

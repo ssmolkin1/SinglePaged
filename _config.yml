@@ -19,7 +19,7 @@ keywords:    "job, application, app, job application, job app, service, cheap, l
 description: "Jobi makes job applications quick, easy and totally hassle-free. Just sign up to one of our plans, send us your resume or CV and Jobi's Helpers will find and fill out suitable job apps for you. Finally, a low-cost, no-hassle way to find jobs!"
 cover_img:   "img/rawpixel-com-250087.jpg"
 full_logo:    "img/full-logo2.png"
-favicon:     img/icon.png
+favicon:     "img/icon.png"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
