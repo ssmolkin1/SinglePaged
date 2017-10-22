@@ -18,7 +18,8 @@ title:       "Jobi: A job application service"
 keywords:    "job, application, app, job application, job app, service, cheap, low cost, Philippines, social enterprise"
 description: "Jobi makes job applications quick, easy and totally hassle-free. Just sign up to one of our plans, send us your resume or CV and Jobi's Helpers will find and fill out suitable job apps for you. Finally, a low-cost, no-hassle way to find jobs!"
 cover_img:   "img/rawpixel-com-250087.jpg"
-favicon:     #put a path like: "img/favicon.ico"
+full_logo:    "img/full-logo2.png"
+favicon:     img/icon.png
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
@@ -32,6 +33,8 @@ colors:
   purple:    '#c869bf'
   orange:    '#fab125'
   turquoise: '#0fbfcf'
+  one:       '#f8f9e8' #ivory
+  two:       '#a9c1e8' #subtle blue
 
 kramdown:
   auto_ids:  false

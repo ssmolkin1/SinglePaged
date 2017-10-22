@@ -17,6 +17,8 @@
 <body>
   <div id="main">
 
+    <img class="logo" src= {{ site.full_logo }} alt="Jobi logo"/>    
+
     <nav><ul>
       {% for node in site.posts reversed %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
@@ -42,7 +44,7 @@
         <div class="subtlecircle sectiondivider faicon">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x" style="color:{{ site.colors.turquoise }}"></i>
+            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x" style="color:{{ site.colors.two }}"></i>
           </span>
           <!-- <h5 class="icon-title">{{ page.title }}</h5> -->
         </div>
