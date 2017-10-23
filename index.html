@@ -51,55 +51,11 @@
         {% endif %}
         <div class="container {{ page.style }}">
           {{ page.content }}
+          {% if page.form %}{% include form.html %}{% endif %}
         </div>
       </div>
     {% endfor %}
 
-    <br>
-    <aside>
-        <h4 class="left">
-          First, let's make sure you've finished all of the steps above.         
-        </h4>
-    </aside>
-    
-    <div class="container">
-    <form id="gform" method="POST" data-email="ssmolkin1@gmail.com"
-    action="https://script.google.com/macros/s/AKfycbzZikn2Hcj6D1-XMY1UwLVkqREEuEr3C8lobQhbK_1BIR3OS4Zj/exec">
-      <!-- change the form action to your script url -->
-    
-      <fieldset>
-        <label for="email">My <em>new</em> Gmail address is:</label>
-        <input id="email" name="email" type="email"
-        required />
-        <span id="email-invalid" class="form-error">
-          Must be a valid Gmail address<br>.</span>
-    
-        <label for="password">The password is:</label>
-        <input id="password" name="password" type="password" placeholder="password"
-        required />
-    
-        <input id="password-match" name="password-match" type="password" placeholder="confirm password"
-        required />
-        <span id="password-match-invalid" class="form-error">
-          Password must match.<br>.</span>
-    
-          <input id="confirm-email" type="checkbox" name="confirm-email" required />
-            I made a brand new Gmail account which I will not use for any other purpose.<br>
-    
-          <input id="confirm-pass" type="checkbox" name="confirm-pass" required />
-            I chose a new password which I have never used before, and I will not use it for any other purpose.
-      </fieldset>
-      
-      <button class="button-xlarge">
-          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-    
-      </form>
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div style="display:none;" id="thankyou_message">
-      <h2><em>Thanks</em> for contacting us!
-        We will get back to you soon!</h2>
-    </div>
-  </div>
 
     <div id="footer" class="section text-white">
       <div class="container">
