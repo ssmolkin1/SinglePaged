@@ -317,7 +317,7 @@ aside {
     margin-bottom: 2em;
 }
 
-form label, form input, form textarea{
+label, input, textarea{
   font-size: 17px;
 }
 
@@ -325,19 +325,14 @@ form label, form input, form textarea{
 textarea {
   width: 100%;
 }
-.content-head {
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 2em 0 1em;
-}
-.is-center {
-  text-align: center;
-}
 
 .form-error{
   display: none;
   color: red;
+}
+
+.address-form input {
+  display: block;
 }
 
 .button-success {
@@ -352,7 +347,7 @@ textarea {
 button {
   float: right;
 }
-#name, #email, #password, #password-match {
+#name, #email, #password, #password-match, .address-form input {
   width: 50%;
   font-size: 17px;
 }

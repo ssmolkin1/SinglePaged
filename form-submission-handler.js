@@ -63,11 +63,9 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
 
-  /* OPTION: Remove this comment to enable SPAM prevention, see README.md
   if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
     return false;
   }
-  */
 
   if ( !validEmail(data.email) ) {   // if email is not valid show error
     document.getElementById('email-invalid').style.display = 'block';
@@ -86,8 +84,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
-        document.getElementById('gform').style.display = 'none'; // hide form
-        document.getElementById('thankyou_message').style.display = 'block';
+        document.getElementById('jobi-form').style.display = 'none'; // hide form
+        document.getElementById('submit_message').style.display = 'block';
         return;
     };
     // url encode form data for sending as post data
@@ -99,7 +97,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 }
 function loaded() {
   console.log('contact form submission handler loaded successfully');
-  // bind to the submit event of our form
+
   var form = document.getElementById('gform');
   form.addEventListener("submit", handleFormSubmit, false);
 };
